@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib>
-
+#include "circle.h"
 int main (){
 	using std::cout;
 	using std::cin;
@@ -19,4 +19,9 @@ int main (){
 
 	for(auto &i: arrai1)
 		cout<<arrai1[i]<<&i<<endl;
-}
+
+	Circle cir(5.5);
+	cout<<"This is the circumeference of the circle: "<<cir.circumference()<<endl;
+	cout<<"This is the area of the cirle: "<<cir.area()<<endl;
+	return 0;
+};
